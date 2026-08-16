@@ -1,0 +1,16 @@
+[project]
+name = "docdex-mcp"
+version = "0.1.0"
+description = "MCP server exposing a markdown documentation corpus as searchable, citable tools"
+requires-python = ">=3.10"
+dependencies = ["mcp>=2.0"]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[project.scripts]
+docdex-mcp = "docdex.server:main"
